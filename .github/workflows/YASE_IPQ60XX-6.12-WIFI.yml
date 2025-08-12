@@ -110,7 +110,7 @@ jobs:
         cd $OPENWRT_PATH
         ./scripts/feeds update -a
         git clone --depth 1 https://github.com/sbwml/openwrt_pkgs.git package/new/custom
-         git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
+        git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
         git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/openlist
         rm -rf feeds/luci/applications/luci-app-oaf
         rm -rf feeds/luci/applications/luci-app-openlist2
