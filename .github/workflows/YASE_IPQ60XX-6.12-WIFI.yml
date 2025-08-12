@@ -112,11 +112,11 @@ jobs:
         git clone --depth 1 https://github.com/sbwml/openwrt_pkgs.git package/new/custom
         git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
         git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/openlist
-        rm -rf feeds/luci/applications/luci-app-oaf
-        rm -rf feeds/luci/applications/luci-app-openlist2
         mv package/new/custom/luci-app-netspeedtest  package/new
         mv package/new/custom/speedtest-cli package/new
         rm -rf package/new/custom
+        rm -rf feeds/luci/applications/luci-app-oaf
+        rm -rf feeds/luci/applications/luci-app-openlist2
         ./scripts/feeds install -a
   
     - name: Load Custom Configuration(加载自定义配置)
